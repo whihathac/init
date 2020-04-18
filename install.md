@@ -7,9 +7,10 @@
 
 ## BoxStarter Installations
  
-```
+```powershell
 Set-ExecutionPolicy RemoteSigned
-Install-BoxstarterPackage -PackageName https://github.com/whihathac/init/blob/master/BoxStarter/base.txt -DisableReboots
+. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force
+Install-BoxstarterPackage -PackageName https://gist.githubusercontent.com/whihathac/c7222eccf8c24b74569847630727ab74/raw/fadd1e793f361be1c838a4c404d065705b1a7b86/Boxstarter.txt -DisableReboots
 ```
 
 ## Chocolatey upgrades
@@ -41,14 +42,10 @@ cinst scriptcs
 
 * [Dashlane](https://www.dashlane.com/download)
 * [PowerShell Core](https://github.com/PowerShell/PowerShell/releases)
-* [Store: Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview)
-* [Store: Whatsapp Web](https://www.microsoft.com/en-us/p/whatsapp-desktop)
-* [Store: Netflix](https://www.microsoft.com/en-us/p/netflix)
-
-## Edge Extensions
-
+* [Store: Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701)
+* [Store: Whatsapp Web](https://www.microsoft.com/en-us/p/whatsapp-desktop/9nksqgp7f2nh)
+* [Store: Netflix](https://www.microsoft.com/en-us/p/netflix/9wzdncrfj3tj)
 * [Dashlane Chrome Extension](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
-
 
 # Next Steps
 You can now move to configure apps as described in [configure.md]
