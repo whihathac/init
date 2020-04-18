@@ -1,0 +1,16 @@
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
+Enable-RemoteDesktop
+
+cinst vscode
+cinst git
+cinst NuGet.CommandLine
+cinst microsoft-edge
+cinst googlechrome
+cinst everything
+cinst beyondcompare
+cinst windirstat
+cinst adobereader
+cinst microsoft-teams.install
+cinst skype
+cinst onenote
+cinst office365proplus

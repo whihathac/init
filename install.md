@@ -3,51 +3,52 @@
 ## Pre-requisite
 
 * Windows 10 Pro version
-* Install [Chocolatey](https://chocolatey.org/install)
-   ```
-   powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('http://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
-   
-   cinst chocolatey
-   ```
+* Install [BoxStarter](https://boxstarter.org) (or [Chocolatey](https://chocolatey.org/install))
 
-## Installations
+## BoxStarter Installations
+ 
+```
+Set-ExecutionPolicy RemoteSigned
+Install-BoxstarterPackage -PackageName https://github.com/whihathac/init/blob/master/BoxStarter/base.txt -DisableReboots
+```
+
+## Chocolatey upgrades
 
 ```
 choco feature enable -n allowGlobalConfirmation
-cinst microsoft-edge
-cinst googlechrome
-cinst adobereader
-cinst microsoft-teams.install
-cinst skype
-cinst onenote
-cinst everything
-cinst beyondcompare
-cinst windirstat
-~~cinst dashlane~~ (May be unsafe)
-~~cinst microsoft-windows-terminal~~ (Use Store for auto-update)
 cup all -y (to update all packages)
 ```
 
-### Dev Tools
+## Dev Tools
 
 ```
 cinst visualstudio2019community
 ~~cinst visualstudio2019enterprise~~ (work only)
 cinst docker-desktop
-cinst git
-cinst NuGet.CommandLine
 cinst sourcetree
-cinst vscode
+```
+
+## Optional Tools
+
+```
 cinst fiddler
+cinst dotpeek
 cinst markdownpad2
 cinst scriptcs
 ```
 
 ## Manual installations
 
+* [Dashlane](https://www.dashlane.com/download)
 * [PowerShell Core](https://github.com/PowerShell/PowerShell/releases)
+* [Store: Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview)
+* [Store: Whatsapp Web](https://www.microsoft.com/en-us/p/whatsapp-desktop)
+* [Store: Netflix](https://www.microsoft.com/en-us/p/netflix)
 
-## Work specific installations
+## Edge Extensions
 
-* CodeFlow (SD project: csmedia)
-* ~~Virtual Smart Card~~
+* [Dashlane Chrome Extension](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
+
+
+# Next Steps
+You can now move to configure apps as described in [configure.md]

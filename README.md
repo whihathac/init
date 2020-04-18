@@ -9,12 +9,8 @@ Setup for whihathac's Dev machine (Windows)
 
 ## Steps:
 
-1. Install [Chocolatey](https://chocolatey.org/install)
-    ```
-    powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('http://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
-    ```
-2. cinst git
-3. git clone https://github.com/whihathac/init
-4. Run rest of installations from [install.md](install.md)
-5. Configure apps as described in [configure.md](configure.md)
+1. Install [BoxStarter](https://boxstarter.org)
+1. Run rest of installations from [install.md](install.md)
+1. Configure apps as described in [configure.md](configure.md)
 
+For some reasons if BoxStarter doesn't work, then install [Chocolatey](https://chocolatey.org/install) manually.
