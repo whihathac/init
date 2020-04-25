@@ -7,6 +7,7 @@
 ## Configure
 
 * Fix Start Menu, Taskbar shortcuts
+* Verify and connect to the Printer
 * Additional upgrades
   * Update Visual Studio Features
   * Install VS Code Extensions
@@ -20,3 +21,5 @@
   * OneNote (Download relevant OneNotes)
   * Mail (Account settings)
   * Outlook (Account Settings)
+  * Source Tree (Sign In, Add git repos)
+* Disable Startup services
