@@ -11,7 +11,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All -
 ```
 
 or 
-```cmd
+```bash
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
@@ -23,7 +23,7 @@ Restart machine when prompted
 ## Configure
 
 Update WSL to version 2:
-```
+```bash
 wsl --set-version ubuntu 2
 
 wsl --set-default-version 2
@@ -31,12 +31,17 @@ wsl --set-default-version 2
 
 Now Open Ubuntu from Menu, and create new user. [Ref guide.](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro)
 
-Install these 'apps':
-```
+### Install these 'apps':
+```bash
 sudo apt install fortune-mod
 sudo apt install cowsay
 sudo apt install lolcat
 sudo apt install mc
+```
+
+Also install [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
+```bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
 Verify 
@@ -44,24 +49,24 @@ Verify
 ## FAQs
 
 ### Upgrade OS
-```
+```bash
 do-release-upgrade
 ```
 
 ### Update & upgrade your distro's packages
-```
+```bash
 sudo apt update && sudo apt upgrade
 ```
 
 ### How do I access my C: drive?
 Mount points for hard drives on the local machine are automatically created and provide easy access to the Windows filesystem.
 
-/mnt/<drive letter>/
+`/mnt/<drive letter>/`
 
-Example usage would be cd /mnt/c to access c:\
+Example usage would be `cd /mnt/c` to access `c:\`
 
 ### How do I set up Git Credential Manager? (How do I use my Windows Git permissions in WSL?)
 
-```
+```bash
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
 ```

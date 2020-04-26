@@ -15,31 +15,57 @@ Set-ExecutionPolicy RemoteSigned
 Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/whihathac/init/master/BoxStarter/base.txt -DisableReboots
 ```
 
+
+## Dev Tools
+
+For Visual Studio:
+* `cinst visualstudio2019community` for personal machine
+* `cinst visualstudio2019enterprise` for work machine.
+
+Other tools:
+```bash
+cinst azure-cli
+cinst docker-desktop
+cinst minikube
+cinst kubernetes-cli
+cinst sourcetree
+```
+
+After restart,
+```bash
+minikube update-context
+```
+
+
+### AZ CLI Addons
+
+List of all extensions are available [here](https://docs.microsoft.com/en-us/cli/azure/azure-cli-extensions-list?view=azure-cli-latest). 
+
+* [Alias](https://docs.microsoft.com/en-us/cli/azure/azure-cli-extension-alias?view=azure-cli-latest)
+  ```bash
+  az extension add --name alias
+  ```
+* [ADO DevOps extension](https://github.com/Azure/azure-devops-cli-extension)
+  ```bash
+  az extension add --name azure-devops
+  ```
+* [AKS Preview](https://github.com/Azure/azure-cli-extensions/tree/master/src/aks-preview)
+  ```bash
+  az extension add --name aks-preview
+  ```
+* [AZ AKS CLI](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest)
+  ```bash
+  az aks install-cli
+  ```
+
+
 ## Chocolatey upgrades
 
-```
+```bash
 choco feature enable -n allowGlobalConfirmation
 cup all -y (to update all packages)
 ```
 
-## Dev Tools
-
-```
-cinst visualstudio2019community
-~~cinst visualstudio2019enterprise~~ (work only)
-cinst docker-desktop
-cinst sourcetree
-```
-
-## Optional Tools
-
-```
-choco install mousewithoutborders
-cinst fiddler
-cinst dotpeek
-cinst markdownpad2
-cinst scriptcs
-```
 
 ## Manual installations
 
@@ -55,8 +81,18 @@ cinst scriptcs
 * Chrome/Edge Extensions
   * [Dashlane Chrome Extension](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
 
-## Windows Linux Subsystem (WLS)
-Follow steps to install WLS2 [here](wls2.md).
 
-# Next Steps
-You can now move to configure apps as described in [configure.md](configure.md)
+## Optional Tools
+
+```bash
+choco install calibre
+choco install mousewithoutborders
+
+cinst fiddler
+cinst dotpeek
+cinst markdownpad2
+cinst scriptcs
+```
+
+Manual Installations:
+* [Visio](office.com/setup)
