@@ -12,7 +12,7 @@
   * Update Visual Studio Features
   * Install VS Code Extensions
 * Update Configs
-  * Update Windows Terminal Profile
+  * [Replace Windows Terminal Settings](WindowsTerminal/settings.json)
   * Update Git Config
 * General Apps
   * Microsoft Edge (Sign In)

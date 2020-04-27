@@ -1,0 +1,59 @@
+shades-of-purple
+lovelace
+3024 Night
+AdventureTime
+Andromeda
+Argonaut
+ayu
+Blazer
+BlueBerryPie
+Bright Lights
+Brogrammer
+Builtin Pastel Dark
+Calamity
+Chalkboard
+ChallengerDeep
+Chester
+idea
+Cobalt2
+Cobalt Neon
+cyberpunk
+DoomOne
+Elementary
+Firewatch
+FishTank
+Flatland
+Floraverse
+Framer
+FrontEndDelight
+Github
+Hardcore
+Highway
+Hipster Green
+LiquidCarbon
+Material
+MaterialOcean
+Molokai
+Monokai Remastered
+Monokai Soda
+Night Owlish Light
+OceanicMaterial
+Pandora
+PaulMillr
+PencilDark
+PencilLight
+Piatto Light
+primary
+purplepeter
+SeaShells
+Subliminal
+synthwave
+synthwave-everything
+Tango Half Adapted
+Tomorrow Night
+Tomorrow Night Blue
+ToyChest
+Ubuntu
+Urple
+Vaughn
+Whimsy

@@ -25,7 +25,6 @@ Restart machine when prompted
 Update WSL to version 2:
 ```bash
 wsl --set-version ubuntu 2
-
 wsl --set-default-version 2
 ```
 
@@ -33,13 +32,15 @@ Now Open Ubuntu from Menu, and create new user. [Ref guide.](https://docs.micros
 
 ### Install these 'apps':
 ```bash
+sudo apt update && sudo apt upgrade
+
 sudo apt install fortune-mod
 sudo apt install cowsay
 sudo apt install lolcat
 sudo apt install mc
 ```
 
-Also install [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
+Also install [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest) (unverified)
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
