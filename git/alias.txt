@@ -1,0 +1,25 @@
+[alias]
+    newb = checkout -b
+    newbranch = checkout -b
+    switchto = checkout
+    lastbranch = checkout -
+    renamebranch = branch -m
+    branches = branch -a
+    stashes = stash list
+    unstage = reset -q HEAD --
+    discard = checkout --
+    uncommit = reset --mixed HEAD~
+    amend = !git add -A && git commit --amend --no-edit
+    nevermind = !git reset --hard HEAD && git clean -d -f
+    pretty = log --color --graph --pretty=format:'%C(bold red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold red)<%an>%Creset' --abbrev-commit --date-order
+    last = log -1 --name-only
+    precommit = diff --cached --diff-algorithm=minimal -w
+    develop = checkout develop
+    master = checkout master
+    globalconfig = config --global -e
+    difflast = difftool HEAD~ HEAD
+	pruneremote = remote update --prune
+    pullall = !git pruneremote && git pull --rebase
+    rebasewithdevelop = !git checkout develop && git pull --rebase && git lastbranch && git rebase develop
+    rebasewithmaster = !git checkout master && git pull --rebase && git lastbranch
+    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"

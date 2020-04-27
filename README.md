@@ -15,5 +15,5 @@ For some reasons if BoxStarter doesn't work, then install [Chocolatey](https://c
 - [x] Machine Setup Chocolate install
 - [x] Windows Terminal Settings
 - [ ] VS Code extensions
-- [ ] Git Setup (global, .gitconfig)
+- [x] Git Setup (global, .gitconfig)
 - [ ] Anything else?

@@ -14,6 +14,7 @@
 * Update Configs
   * [Replace Windows Terminal Settings](WindowsTerminal/settings.json)
   * Update Git Config
+    * Update [Alias](git\alias) in `%user%\.gitconfig`
 * General Apps
   * Microsoft Edge (Sign In)
   * Chrome (Sign In)

@@ -75,11 +75,12 @@ cup all -y (to update all packages)
   * [SysInternals Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
   * [Adobe Creative Suite: Lightroom](https://creativecloud.adobe.com/)
 * Windows Store
-  * [Store: Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701)
-  * [Store: Whatsapp Web](https://www.microsoft.com/en-us/p/whatsapp-desktop/9nksqgp7f2nh)
-  * [Store: Netflix](https://www.microsoft.com/en-us/p/netflix/9wzdncrfj3tj)
+  * [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701)
+  * [Whatsapp Web](https://www.microsoft.com/en-us/p/whatsapp-desktop/9nksqgp7f2nh)
+  * [Netflix](https://www.microsoft.com/en-us/p/netflix/9wzdncrfj3tj)
 * Chrome/Edge Extensions
-  * [Dashlane Chrome Extension](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
+  * [Dashlane](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
+  * [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 
 
 ## Optional Tools
