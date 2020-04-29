@@ -1,5 +1,5 @@
 git config --global core.autocrlf input
-git config --global core.safecrlf true
+git config --global core.safecrlf false
 git config --global core.filemode false
 git config --global branch.autosetuprebase always
 git config --global user.email bhavikv@gmail.com

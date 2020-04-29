@@ -17,12 +17,12 @@
   * Install VS Code Extensions
     * VS Remote
 * Update Configs
+  * [Powershell (including PS Core)](powershell.md) 
   * Windows Terminal
-    * Powershell (including PS Core)
-      * Install [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)    
     * [Replace Windows Terminal Settings](WindowsTerminal/settings.json)
   * Update Git Config
-    * Update [Alias](git\alias) in `%user%\.gitconfig`
+    * Update [Alias](git\alias.txt) in `%user%\.gitconfig`
+    * Run [Config](git\config.txt) commands
     * [Set Beyond Compare for git diff/compare](https://www.scootersoftware.com/support.php?zz=kb_vcs#gitwindows)
 * General Apps
   * Beyond Compare (Activate License)
