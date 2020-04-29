@@ -2,7 +2,9 @@
 # Windows Linux Subsystem 
 https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
 
-First Enable WSL2
+**Note: WSL2 can only work on Windows Version 2004**
+
+Enable WSL
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All -NoRestart
@@ -45,7 +47,12 @@ Also install [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-c
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
-Verify 
+### OhMyZsh
+
+Configure the OhMyZsh shell and related plugins:
+https://blog.nillsf.com/index.php/2020/02/17/setting-up-wsl2-windows-terminal-and-oh-my-zsh/
+https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
+
 
 ## FAQs
 

@@ -28,11 +28,13 @@ cinst azure-cli
 cinst docker-desktop
 cinst minikube
 cinst kubernetes-cli
+
 cinst sourcetree
 ```
 
 After restart,
 ```bash
+minikube status
 minikube update-context
 ```
 
@@ -71,8 +73,6 @@ cup all -y (to update all packages)
 
 * Apps
   * [Dashlane](https://www.dashlane.com/download)
-  * [PowerShell Core](https://github.com/PowerShell/PowerShell/releases)
-  * [SysInternals Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
   * [Adobe Creative Suite: Lightroom](https://creativecloud.adobe.com/)
 * Windows Store
   * [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701)
@@ -81,6 +81,10 @@ cup all -y (to update all packages)
 * Chrome/Edge Extensions
   * [Dashlane](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
   * [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+* Tools
+  * [PowerShell Core](https://github.com/PowerShell/PowerShell/releases)
+  * [SysInternals Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+  * [Text Analysis Tool](https://textanalysistool.github.io/)
 
 
 ## Optional Tools
