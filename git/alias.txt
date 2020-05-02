@@ -1,3 +1,11 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[user]
+    name = Bhavik Vora
+    email = bhavikv@gmail.com
 [alias]
     newb = checkout -b
     newbranch = checkout -b
@@ -18,8 +26,16 @@
     master = checkout master
     globalconfig = config --global -e
     difflast = difftool HEAD~ HEAD
-	pruneremote = remote update --prune
+    pruneremote = remote update --prune
     pullall = !git pruneremote && git pull --rebase
     rebasewithdevelop = !git checkout develop && git pull --rebase && git lastbranch && git rebase develop
     rebasewithmaster = !git checkout master && git pull --rebase && git lastbranch
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+[core]
+    autocrlf = input
+    safecrlf = false
+    filemode = false
+[branch]
+    autosetuprebase = always
+[push]
+    default = current

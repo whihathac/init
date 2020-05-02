@@ -1,6 +1,6 @@
 # Powershell 
 
-# Installations
+# Installations (for both PS Core/PS)
 
 Install [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh):
 
@@ -18,7 +18,7 @@ In case of PS Core, install version 2.0.0-beta1 of PSReadLine
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 ```
 
-## Default Profile Settings
+## Default Profile Settings (for both PS Core/PS)
 
 ```powershell
 if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
@@ -32,4 +32,16 @@ Import-Module oh-my-posh
 Set-Theme Robbyrussell
 
 $DefaultUser = 'bhavikv'
+```
+
+## Install the Powerline fonts (once)
+
+```powershell
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+.\install.ps1
+
+#clean up
+cd ..
+rd /S /Q fonts
 ```

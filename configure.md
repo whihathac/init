@@ -21,7 +21,7 @@
   * Windows Terminal
     * [Replace Windows Terminal Settings](WindowsTerminal/settings.json)
   * Update Git Config
-    * Update [Alias](git\alias.txt) in `%user%\.gitconfig`
+    * Update [Alias](git\alias.txt) in `%userprofile%\.gitconfig`
     * Run [Config](git\config.txt) commands
     * [Set Beyond Compare for git diff/compare](https://www.scootersoftware.com/support.php?zz=kb_vcs#gitwindows)
 * General Apps
@@ -34,7 +34,7 @@
   * Outlook (Account Settings)
   * Source Tree (Sign In, Add git repos)
   * Calibre Plug-ins
-  * Docker (Disable Stats, enable WLS2, Install Kubernetes)
+  * Docker (Sign in, Disable Stats, enable WLS2, Install Kubernetes)
 * Set PATH
   * `C:\Users\<user>\.azure-kubectl`
 * Disable Startup services

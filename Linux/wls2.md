@@ -22,12 +22,13 @@ Install Ubuntu distro from [Store: Ubuntu](https://www.microsoft.com/en-us/p/ubu
 
 Restart machine when prompted
 
-## Configure
+## Configure (works only on Win 10 ver> 2004)
 
-Update WSL to version 2:
+Update WSL (and existing images) to version 2:
 ```bash
-wsl --set-version ubuntu 2
 wsl --set-default-version 2
+wsl --set-version ubuntu 2
+wsl --list --verbose or wsl -l -v
 ```
 
 Now Open Ubuntu from Menu, and create new user. [Ref guide.](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro)
@@ -40,6 +41,9 @@ sudo apt install fortune-mod
 sudo apt install cowsay
 sudo apt install lolcat
 sudo apt install mc
+
+sudo apt install python3 python3-pip ipython3
+pip3 install jupyter
 ```
 
 Also install [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest) (unverified)
@@ -49,12 +53,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 ### OhMyZsh
 
-Configure the OhMyZsh shell and related plugins:
-https://blog.nillsf.com/index.php/2020/02/17/setting-up-wsl2-windows-terminal-and-oh-my-zsh/
-https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
-https://github.com/romkatv/powerlevel10k
-
-Use the [.zshrc](.zshrc) and update the config.
+Use [this guide](zsh.md) for installation.
 
 ## FAQs
 
@@ -80,3 +79,6 @@ Example usage would be `cd /mnt/c` to access `c:\`
 ```bash
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
 ```
+
+### Reset WLS password
+https://virtualizationreview.com/articles/2018/07/26/wsl-password-reset.aspx

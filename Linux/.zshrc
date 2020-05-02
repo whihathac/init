@@ -109,6 +109,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias charm="/mnt/c/Users/hiral/AppData/Local/JetBrains/Toolbox/apps/PyCharm-P/ch-0/<version>/bin/pycharm64.exe"
+alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
 
 cd /mnt/c/git
 

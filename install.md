@@ -51,13 +51,13 @@ List of all extensions are available [here](https://docs.microsoft.com/en-us/cli
   ```bash
   az extension add --name azure-devops
   ```
-* [AKS Preview](https://github.com/Azure/azure-cli-extensions/tree/master/src/aks-preview)
-  ```bash
-  az extension add --name aks-preview
-  ```
 * [AZ AKS CLI](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest)
   ```bash
   az aks install-cli
+  ```
+* [AKS Preview](https://github.com/Azure/azure-cli-extensions/tree/master/src/aks-preview)
+  ```bash
+  az extension add --name aks-preview
   ```
 
 
@@ -81,10 +81,12 @@ cup all -y (to update all packages)
 * Chrome/Edge Extensions
   * [Dashlane](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
   * [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-* Tools
+* Dev Tools
+  * [Jetbrains PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
   * [PowerShell Core](https://github.com/PowerShell/PowerShell/releases)
+  * [Azure Portal app](https://portal.azure.com/App/Download)
   * [SysInternals Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
-  * [Text Analysis Tool](https://textanalysistool.github.io/)
+  * [Text Analysis Tool](https://textanalysistool.github.io)
 
 
 ## Optional Tools
