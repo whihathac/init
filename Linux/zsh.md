@@ -7,7 +7,6 @@ Install [Oh-My-Zsh shell](https://ohmyz.sh) and [powerlevel10k](https://github.c
 ```bash
 sudo apt update
 sudo apt-get install zsh curl git -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
@@ -20,6 +19,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 Run `code ~/.zshrc` or `nano ~/.zshrc` to update the [.zshrc](.zshrc) config.
 
+To get changes to the .zshrc picked up, type: `source ~/.zshrc`
+
 Run `code ~/.p10k.zsh` to update the [.p10k.zsh](.p10k.zsh) config.
 
 ## References
@@ -27,3 +28,4 @@ Run `code ~/.p10k.zsh` to update the [.p10k.zsh](.p10k.zsh) config.
 * https://blog.nillsf.com/index.php/2020/02/17/setting-up-wsl2-windows-terminal-and-oh-my-zsh/
 * https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
 * https://medium.com/@hjgraca/style-your-windows-terminal-and-wsl2-like-a-pro-9a2e1ad4c9d0 
+* https://www.smashingmagazine.com/2019/09/moving-javascript-development-bash-windows/

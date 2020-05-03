@@ -47,7 +47,6 @@ tbf
 * [Formatting Query Results](https://docs.microsoft.com/en-us/cli/azure/query-azure-cli?view=azure-cli-latest)
 
 
-
 ## Markdown
 * [Markdown Text 101](https://gist.github.com/Almeeida/41a664d8d5f3a8855591c2f1e0e07b19)
 * [Github: Mastering Markdown](https://guides.github.com/features/mastering-markdown)

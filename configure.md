@@ -17,12 +17,12 @@
   * Install VS Code Extensions
     * VS Remote
 * Update Configs
-  * [Powershell (including PS Core)](powershell.md) 
+  * [Powershell (including PS Core)](Powershell\Readme.md) 
   * Windows Terminal
     * [Replace Windows Terminal Settings](WindowsTerminal/settings.json)
   * Update Git Config
-    * Update [Alias](git\alias.txt) in `%userprofile%\.gitconfig`
-    * Run [Config](git\config.txt) commands
+    * Update [gitconfig settings](git\.gitconfig) in `%userprofile%\.gitconfig`
+    * Run [Git Commands](git\Commands.txt) if necessary
     * [Set Beyond Compare for git diff/compare](https://www.scootersoftware.com/support.php?zz=kb_vcs#gitwindows)
 * General Apps
   * Beyond Compare (Activate License)

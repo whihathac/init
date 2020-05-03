@@ -78,6 +78,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  ssh-agent
 )
 
 ZSH_DISABLE_COMPFIX=true
@@ -111,6 +112,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias charm="/mnt/c/Users/hiral/AppData/Local/JetBrains/Toolbox/apps/PyCharm-P/ch-0/<version>/bin/pycharm64.exe"
 alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
+
+alias open="explorer.exe"
+
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove --purge"
+alias upgrade="sudo apt update && sudo apt upgrade"
+alias upgradeos="do-release-upgrade"
 
 cd /mnt/c/git
 

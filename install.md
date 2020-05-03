@@ -78,10 +78,11 @@ cup all -y (to update all packages)
   * [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701)
   * [Whatsapp Web](https://www.microsoft.com/en-us/p/whatsapp-desktop/9nksqgp7f2nh)
   * [Netflix](https://www.microsoft.com/en-us/p/netflix/9wzdncrfj3tj)
+  * [Python](https://www.microsoft.com/en-us/p/python/9mssztt1n39l)
 * Chrome/Edge Extensions
   * [Dashlane](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
   * [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-* Dev Tools
+* Tools
   * [Jetbrains PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
   * [PowerShell Core](https://github.com/PowerShell/PowerShell/releases)
   * [Azure Portal app](https://portal.azure.com/App/Download)
