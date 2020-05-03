@@ -45,7 +45,7 @@ sudo apt install mc
 sudo apt install keychain
 
 sudo apt install python3 python3-pip ipython3
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 pip3 install jupyter
 ```
 
