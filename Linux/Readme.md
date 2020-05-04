@@ -37,21 +37,16 @@ Now Open Ubuntu from Menu, and create new user. [Ref guide.](https://docs.micros
 ```bash
 sudo apt update && sudo apt upgrade
 
-sudo apt install fortune-mod
-sudo apt install cowsay
-sudo apt install lolcat
-sudo apt install mc
+sudo apt install fortune-mod -Y
+sudo apt install cowsay -Y
+sudo apt install lolcat -Y
+sudo apt install mc -Y
 
-sudo apt install keychain
+sudo apt install keychain -Y
 
-sudo apt install python3 python3-pip ipython3
+sudo apt install python3 python3-pip ipython3 -Y
 python3 -m pip install --upgrade pip
 pip3 install jupyter
-```
-
-Also install [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest) (unverified)
-```bash
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
 ### OhMyZsh
