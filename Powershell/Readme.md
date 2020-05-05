@@ -40,8 +40,5 @@ $DefaultUser = 'bhavikv'
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 .\install.ps1
-
-#clean up
-cd ..
-rd /S /Q fonts
+cd ..;rm -r -for ./fonts
 ```
