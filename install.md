@@ -3,33 +3,77 @@
 ## Pre-requisite
 
 * Windows 10 Pro version
+* Install [WinGet](https://docs.microsoft.com/en-us/windows/package-manager/winget/#install-winget)
+
+This part is being deprecated
 * Install [BoxStarter](https://boxstarter.org) (or [Chocolatey](https://chocolatey.org/install))
 
-## BoxStarter Installations
+## WinGet Installations
 
-Install BoxStarter and run base packages:
-```powershell
-Set-ExecutionPolicy RemoteSigned
-. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force
+Verified:
+```bash
+winget install Microsoft.PowerShell
+winget install Microsoft.VisualStudioCode
 
-Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/whihathac/init/master/BoxStarter/base.txt -DisableReboots
+winget install Adobe.AdobeAcrobatReaderDC
+winget install AntibodySoftware.WizTree
+winget install Dashlane.Dashlane
+winget install Google.Chrome
+winget install LINQPad.LINQPad.6
+winget install Logitech.Options
+winget install Microsoft.Edge
+winget install Microsoft.MouseWithoutBorders
+winget install Microsoft.PowerToys
+winget install Notepad++.Notepad++
+winget install ScooterSoftware.BeyondCompare4
+winget install voidtools.EverythingLite
 ```
 
+Not verified:
+```bash
+winget install Microsoft.Office
+winget install Microsoft.Teams
+
+winget install WinDirStat.WinDirStat
+```
+
+Older version
+```bash
+winget install Microsoft.WindowsTerminal
+```
+
+To find equivalent WinGet
+```bash
+cinst NuGet.CommandLine
+cinst onenote
+```
 
 ## Dev Tools
 
 For Visual Studio:
-* `cinst visualstudio2019community` for personal machine
-* `cinst visualstudio2019enterprise` for work machine.
+* `winget install Microsoft.VisualStudio.2019.Community` for personal machine. (Unverified)
+* `winget install Microsoft.VisualStudio.2019.Enterprise` for work machine.
 
 Other tools:
 ```bash
-cinst azure-cli
-cinst docker-desktop
 cinst minikube
 cinst kubernetes-cli
+```
 
-cinst sourcetree
+
+```bash
+winget install Microsoft.dotnet
+
+winget install Git.Git
+winget install Microsoft.AzureCLI
+
+winget install Python.Python.3
+
+winget install Atlassian.Sourcetree
+winget install Docker.DockerDesktop
+winget install Kubernetes.minikube
+winget install NuGetPackageExplorer.NuGetPackageExplorer
+winget install Postman.Postman
 ```
 
 After restart,
@@ -68,6 +112,9 @@ choco feature enable -n allowGlobalConfirmation
 cup all -y (to update all packages)
 ```
 
+```
+winget upgrade --all
+```
 
 ## Manual installations
 
@@ -78,7 +125,6 @@ cup all -y (to update all packages)
   * [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701)
   * [Whatsapp Web](https://www.microsoft.com/en-us/p/whatsapp-desktop/9nksqgp7f2nh)
   * [Netflix](https://www.microsoft.com/en-us/p/netflix/9wzdncrfj3tj)
-  * [Python](https://www.microsoft.com/en-us/p/python/9mssztt1n39l)
 * Chrome/Edge Extensions
   * [Dashlane](https://chrome.google.com/webstore/detail/dashlane-password-manager/fdjamakpfbbddfjaooikfcpapjohcfmg)
   * [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
@@ -93,14 +139,22 @@ cup all -y (to update all packages)
 ## Optional Tools
 
 ```bash
-choco install calibre
-choco install mousewithoutborders
-
+cinst calibre
 cinst fiddler
 cinst dotpeek
 cinst markdownpad2
 cinst scriptcs
 ```
 
-Manual Installations:
+## Manual Installations:
 * [Visio](office.com/setup)
+
+## Old BoxStarter Installations
+
+Install BoxStarter and run base packages:
+```powershell
+Set-ExecutionPolicy RemoteSigned
+. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force
+
+Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/whihathac/init/master/BoxStarter/base.txt -DisableReboots
+```
