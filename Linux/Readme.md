@@ -37,9 +37,7 @@ Now Open Ubuntu from Menu, and create new user. [Ref guide.](https://docs.micros
 ```bash
 sudo apt update && sudo apt upgrade
 
-sudo apt install fortune-mod -Y
-sudo apt install cowsay -Y
-sudo apt install lolcat -Y
+sudo apt install fortune-mod cowsay lolcat -Y
 sudo apt install mc -Y
 
 sudo apt install keychain -Y

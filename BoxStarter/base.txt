@@ -10,7 +10,9 @@ cinst everything
 cinst beyondcompare
 cinst windirstat
 cinst adobereader
-cinst microsoft-teams.install
 cinst skype
+cinst zoom
+
+cinst microsoft-teams.install
 cinst onenote
 cinst office365proplus
